@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: NEWWIFI D2
+name: NewWifi D2
 
 on:
   push:
@@ -60,7 +60,6 @@ jobs:
           cd package
           mkdir openwrt-packages
           cd openwrt-packages 
-          git clone https://github.com/peter-tank/luci-app-ssr-plus.git
           git clone https://github.com/zerofo/luci-app-passwall.git
 
 
@@ -174,7 +173,6 @@ jobs:
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-zerotier=y
-          CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-app-passwall=y
           EOF
 
